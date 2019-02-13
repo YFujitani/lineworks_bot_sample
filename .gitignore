@@ -1,0 +1,45 @@
+.DS_Store
+*~
+\#*#
+
+# Python
+*.pyc
+.python-version
+
+# Environments
+.env
+.envrc
+
+# ipynb
+*ipynb
+
+zappa/
+
+# mypy
+.mypy_cache/
+
+# pycharm
+*.xml
+!/codeStyleSettings.xml
+!/copyright/*.xml
+!/fileColors.xml
+!/encodings.xml
+!/gradle.xml
+!/runConfigurations/*.xml
+
+# vscode
+.vscode
+
+scripts/output/*
+!.gitkeep
+
+!/inspectionProfiles/*.xml
+/inspectionProfiles/profiles_settings.xml
+
+!/scopes/*.xml
+/scopes/scope_settings.xml
+
+!/templateLanguages.xml
+!/vcs.xml
+
+*.key
