@@ -57,6 +57,10 @@ def helthcheck():
 @app.route('/callback', endpoint='callback', methods=['POST'])
 def callback():
     data = request.get_json()
+    # TODO type message以外のイベントをひとまずハンドルしない
+    if data.get('type') != 'message':
+        return 'Do nothing!!'
+
     # TODO　data['content']['text']がないケースもある模様　要確認
     text = data['content']['text']
 
